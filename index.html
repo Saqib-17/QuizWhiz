@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizWhiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        .playwrite {
+            font-family: "Playwrite US Modern", cursive;
+        }
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 15px rgba(196, 91, 82, 0.7);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#d36831',
+                        'secondary-color': '#f6eec3',
+                        'brown': '#8c7a5b',
+                        'pink': '#c45b52',
+                        'light-pink': '#d36831',
+                        'maroon': '#551317',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="playwrite">
+    <!-- Header -->
+    <header class="lg:px-40 px-2 py-2 bg-secondary-color shadow-md sticky top-0 z-10">
+        <nav>
+            <div class="navbar bg-secondary-color">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost lg:text-3xl text-primary-color hover:text-brown transition-colors duration-300">QuizWhiz</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-primary-color lg:text-lg hover:text-pink transition-colors duration-300">Features</a></li>
+                        <li><a class="text-primary-color lg:text-lg hover:text-pink transition-colors duration-300">Solution</a></li>
+                        <li><a class="text-primary-color lg:text-lg hover:text-pink transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="lg:text-lg btn bg-primary-color font-medium rounded-full px-8 py-2 text-white hover:bg-pink transition-transform transform hover:scale-105">Try for free</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-secondary-color">
+        <!-- Landing Page -->
+        <div class="hero lg:py-10 animate-fade-in">
+            <div class="hero-content flex-col lg:flex-row-reverse text-primary-color gap-10 lg:gap-24">
+                <img class="lg:w-[600px] hover:scale-105 transition-transform duration-300" src="assets/Online test-pana.svg" alt="Exam illustration" />
+                <div class="flex flex-col lg:gap-16 space-y-4">
+                    <h1 class="font-medium lg:text-6xl text-3xl text-center animate-fade-in">Get exam-ready,</h1>
+                    <h1 class="text-end font-medium lg:text-6xl text-3xl animate-fade-in">stress-free.</h1>
+                    <button class="btn bg-secondary-color mx-auto lg:px-16 shadow-[0_20px_50px_rgba(211,_104,_49,_0.7)] text-primary-color rounded-xl lg:text-3xl text-xl content-center lg:py-8 font-normal hover:bg-pink hover:text-white transition-transform transform hover:scale-105">Start Quiz</button>
+                    <p class="animate-fade-in">Practice tests designed to boost your confidence and sharpen your skills.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <section class="lg:px-40 px-10 py-2 bg-secondary-color">
+            <div class="mt-20 px-2">
+                <h1 class="text-2xl lg:text-5xl text-center text-brown animate-fade-in">About Us!</h1>
+            </div>
+            <div class="my-6 lg:my-20 flex flex-col lg:flex-row gap-16 justify-between animate-fade-in">
+                <!-- Card 1 -->
+                <div class="card card-compact lg:w-96 shadow-xl bg-white hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 glow-effect">
+                    <figure>
+                        <img src="assets/fa.jpg" alt="Md. Faisal Ahmed" class="hover:scale-110 transition-transform duration-300" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-start text-sm font-bold">Md. Faisal Ahmed</h2>
+                        <p class="text-xs">East Delta University</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card card-compact lg:w-96 shadow-xl bg-white hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 glow-effect">
+                    <figure>
+                        <img src="assets/mish.jpg" alt="Lazima Mishfa" class="hover:scale-110 transition-transform duration-300" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-start text-sm font-bold">Lazima Mishfa</h2>
+                        <p class="text-xs">East Delta University</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card card-compact lg:w-96 shadow-xl bg-white hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 glow-effect">
+                    <figure>
+                        <img src="assets/sa.jpg" alt="Md. Shahidul Islam Sakib" class="hover:scale-110 transition-transform duration-300" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-start text-sm font-bold">Md. Shahidul Islam Sakib</h2>
+                        <p class="text-xs">East Delta University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#ec9e78] lg:px-40 px-2 py-2 lg:py-6">
+        <section>
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between gap-4">
+                <div class="text-center lg:text-left">
+                    <h2 class="text-maroon text-xl md:text-2xl lg:text-4xl pt-2 lg:pt-6">QuizWhiz</h2>
+                    <p class="text-pink text-base md:text-lg lg:text-2xl pt-2 lg:pt-6">Get exam-ready, stress-free.</p>
+                </div>
+                <div class="w-full lg:w-auto flex justify-center">
+                    <div class="flex justify-center gap-3 lg:gap-4">
+                        <a class="w-[24px] lg:w-[40px] hover:scale-110 transition-transform duration-300" href="">
+                            <img src="assets/fb.png" alt="Facebook" class="glow-effect">
+                        </a>
+                        <a class="w-[24px] lg:w-[40px] hover:scale-110 transition-transform duration-300" href="">
+                            <img src="assets/ig.png" alt="Instagram" class="glow-effect">
+                        </a>
+                        <a class="w-[24px] lg:w-[40px] hover:scale-110 transition-transform duration-300" href="">
+                            <img src="assets/github.png" alt="GitHub" class="glow-effect">
+                        </a>
+                        <a class="w-[24px] lg:w-[40px] hover:scale-110 transition-transform duration-300" href="">
+                            <img src="assets/linkedin.png" alt="LinkedIn" class="glow-effect">
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-2 md:pt-4 lg:pt-6 text-center mb-6">
+                    <p class="text-maroon text-xs lg:text-base">© All rights reserved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
