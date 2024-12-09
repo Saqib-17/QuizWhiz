@@ -57,7 +57,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="lg:text-lg btn bg-primary-color font-medium rounded-full px-8 py-2 text-white hover:bg-pink transition-transform transform hover:scale-105">Try for free</a>
+                    <a onclick="window.location.href='signup.html';" class="lg:text-lg btn bg-primary-color font-medium rounded-full px-8 py-2 text-white hover:bg-pink transition-transform transform hover:scale-105">Try for free</a>
                 </div>
             </div>
         </nav>
@@ -72,11 +72,17 @@
                 <div class="flex flex-col lg:gap-16 space-y-4">
                     <h1 class="font-medium lg:text-6xl text-3xl text-center animate-fade-in">Get exam-ready,</h1>
                     <h1 class="text-end font-medium lg:text-6xl text-3xl animate-fade-in">stress-free.</h1>
-                    <button class="btn bg-secondary-color mx-auto lg:px-16 shadow-[0_20px_50px_rgba(211,_104,_49,_0.7)] text-primary-color rounded-xl lg:text-3xl text-xl content-center lg:py-8 font-normal hover:bg-pink hover:text-white transition-transform transform hover:scale-105">Start Quiz</button>
+                    <!-- Updated Button -->
+                    <button 
+                        onclick="location.href='group.html'" 
+                        class="btn bg-secondary-color mx-auto lg:px-16 shadow-[0_20px_50px_rgba(211,_104,_49,_0.7)] text-primary-color rounded-xl lg:text-3xl text-xl content-center lg:py-8 font-normal hover:bg-pink hover:text-white transition-transform transform hover:scale-105">
+                        Start Quiz
+                    </button>
                     <p class="animate-fade-in">Practice tests designed to boost your confidence and sharpen your skills.</p>
                 </div>
             </div>
         </div>
+        
 
         <!-- About Us Section -->
         <section class="lg:px-40 px-10 py-2 bg-secondary-color">
@@ -149,4 +155,5 @@
         </section>
     </footer>
 </body>
+
 </html>
