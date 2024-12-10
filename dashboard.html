@@ -84,36 +84,75 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="flex justify-center lg:ml-16 p-6 mt-16 md:mt-0">
-        <section class="text-center">
-            <h2 class="text-2xl lg:text-5xl font-bold text-maroon lg:pt-24">Choose Subject For Quiz</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center lg:pt-36 pt-6">
-                <!-- phy -->
-                <div class="col-span-1 bg-yellow-200 rounded-lg shadow-md p-10 hover:bg-yellow-300 transition text-center">
-                    <img src="assets/physics.svg" alt="Science Icon" class="mx-auto w-20 h-20 mb-6">
-                    <p class="text-2xl font-medium text-maroon">Physics</p>
+    <main class="flex-grow p-6 md:p-12 mx-4 lg:mx-60">
+        <section>
+            <!-- Main Content -->
+            <div class="flex-1 flex flex-col space-y-8 p-6 lg:pl-12">
+                <!-- Score Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6 rounded-lg shadow-md">
+                    <!-- Your Score -->
+                    <div class="col-span-1 lg:col-span-2 flex flex-col bg-[#d4e5dc] rounded-lg shadow-md p-6">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg font-bold">Your Score</h2>
+                            <p class="text-2xl  font-bold">08/10</p>
+                        </div>
+                        <div class="flex justify-center space-x-12 mt-6">
+                            <div class="flex flex-col items-center space-y-4 text-xl  font-bold">
+                                <p>Right</p>
+                                <p class="lg:text-4xl text-2xl ">8</p>
+                            </div>
+                            <div class="flex flex-col items-center space-y-4 text-xl font-bold  ">
+                               <p>Wrong</p>
+                               <p class="lg:text-4xl text-2xl ">2</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Leaderboard -->
+                    <div class="bg-[#d4e5dc] rounded-lg shadow-md p-6">
+                        <h2 class="text-lg font-bold text-center">Leaderboard</h2>
+                        <ul class="mt-4 space-y-2">
+                            <li>1. Faisal Ahmed</li>
+                            <li>2. Shahidul Sakib</li>
+                            <li>3. Lazima Mishfa</li>
+                            <li>4. Batman</li>
+                            <li class="font-bold text-maroon">• You are on 10th</li>
+                        </ul>
+                    </div>
                 </div>
     
-                <!-- chem (Middle Card) -->
-                <div class="col-span-1 lg:col-span-2 bg-yellow-300 rounded-lg shadow-lg p-12 hover:bg-yellow-400 transition text-center"
-                onclick="window.location.href='question.html'">
-               <img src="assets/chemistry.svg" alt="Commerce Icon" class="mx-auto w-24 h-24 mb-6">
-               <p class="text-3xl font-bold text-maroon">Chemistry</p>
-           </div>
-           
+                <!-- Additional Information Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6  p-6 rounded-lg shadow-md">
+                    <!-- Growth -->
+                    <div class="bg-[#d4e5dc] rounded-lg shadow-md p-6 text-center">
+                        <h2 class="text-lg font-bold">Your Growth</h2>
+                        <img class="w-[180px] mx-auto" src="assets/Growth curve-pana.svg" alt="">
+
+                        
+                    </div>
     
-                <!-- Biology -->
-                <div class="col-span-1 bg-yellow-200 rounded-lg shadow-md p-10 hover:bg-yellow-300 transition text-center">
-                    <img src="assets/biology.svg" alt="Arts Icon" class="mx-auto w-20 h-20 mb-6">
-                    <p class="text-2xl font-medium text-maroon">Biology</p>
+                    <!-- Number of Attempts -->
+                    <div class="bg-[#d4e5dc] rounded-lg shadow-md p-6 text-center">
+                        <h2 class="text-lg font-bold">Number of Attempts</h2>
+                        <p class="text-2xl lg:text-4xl font-bold mt-4 pt-4 lg:pt-10">20</p>
+                    </div>
+    
+                    <!-- Feedback -->
+                    <div class="bg-[#d4e5dc] rounded-lg shadow-md p-6 lg:py-20">
+                        <h2 class="text-lg font-bold text-center">Feedback</h2>
+                        <p class="mt-4 italic text-center">"Push your limits – success follows hard work!"</p>
+                    
+                    </div>
                 </div>
             </div>
+            <div class="absolute bottom-4 right-4 hidden md:block">
+                <img src="assets/Feedback.svg" alt="Student Illustration" class="w-80">
+            </div>
         </section>
-        <!-- Bottom Right Illustration -->
-        <div class="absolute bottom-4 right-4 hidden md:block">
-            <img src="assets/Cool Kids - Study.png" alt="Student Illustration" class="w-80">
-        </div>
     </main>
+    
+    
 
 </body>
 </html>
+
